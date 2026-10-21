@@ -1,0 +1,380 @@
+/*************** Mobile *********************/
+
+/* Header */
+header {
+    padding: 16px 24px;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Logo */
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header .logo img {
+    width: 48px;
+}
+
+/* Burgermenu */
+.menu_toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 5px 0;
+}
+
+/* Navigation */
+header nav,
+.header_button {
+    display: none;
+}
+
+header nav.open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    list-style: none;
+}
+
+/* Hero */
+.hero {
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+}
+
+.hero .container {
+    width: 100%;
+}
+
+.hero_content {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hero_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+/* Intro Section */
+.intro_section {
+    padding: 64px 24px;
+}
+
+.intro_content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.intro_heading {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.intro_text {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-self: center;
+}
+
+/* Guides */
+.guides {
+    padding: 64px 24px;
+}
+
+.guides_content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.guides_heading {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.guide_card {
+    display: flex;
+    flex-direction: column;
+}    
+
+.guide_card_content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+}
+
+.guide_card_content a {
+    margin-top: auto;
+}
+
+.guides_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+/* CTA Section */
+.cta_section {
+    padding: 64px 24px;
+    text-align: center;
+}
+
+.cta_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    padding: 48px 24px;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer_brand {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer_nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+}
+
+.footer_bottom {
+    margin-top: 32px;
+    padding-top: 24px;
+}
+
+/* Page Hero */
+.page_hero {
+    padding: 24px;
+}
+
+.page_hero .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Steps Section */
+.steps_section {
+    padding: 64px 24px;
+}
+
+.steps_section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.step_text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Equipment Section */
+.equipment_section {
+    padding: 64px 24px;
+}
+
+.equipment_content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+
+
+
+/*************** Desktop *********************/
+
+@media (min-width: 1000px) {
+
+    .container {
+        max-width: 1280px;
+        margin-inline: auto;
+    }
+
+    /* Header */
+    header {
+        padding: 16px 24px;
+    }
+
+    /* Logo */
+    header .logo img {
+        width: 80px;
+    }
+
+    /* Navigation */
+    header nav {
+        display: block;
+        margin-left: auto;
+        margin-right: 40px;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    /* Header button */
+    .header_button {
+        display: inline-block;
+    }
+
+    /* Burgermenu */
+    .menu_toggle {
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 450px;
+        padding: 64px 80px;
+    }
+
+    .hero_buttons {
+        flex-direction: row;
+    }
+
+    /* Intro Section */
+    .intro_section {
+        padding: 64px 80px;
+    }
+
+    .intro_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+    }
+
+    /* Guides */
+    .guides {
+        padding: 64px 80px;
+    }
+
+    .guides_grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* CTA Section */
+    .cta_section {
+        padding: 80px;
+    }
+
+    /* Footer */
+    footer {
+    padding: 40px 80px;
+    }
+
+    .footer_content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Page Hero */
+    .page_hero {
+        padding: 80px;
+    }
+
+    .page_hero h1 {
+        font-size: 48px;
+    }
+
+    .page_hero_text {
+        font-size: 16px;
+    }
+
+    /* Steps Section */
+    .steps_section {
+        padding: 80px;
+        gap: 120px;
+    }
+
+    .step {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        align-items: center;
+    }
+
+    .step:nth-child(even) img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    /* Equipment Section */
+    .equipment_section {
+    padding: 80px;
+    }
+
+    .equipment_content {
+        max-width: 800px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+

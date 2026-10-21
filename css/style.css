@@ -1,0 +1,441 @@
+/*************** Reset *********************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*************** Farver *********************/
+
+:root {
+    --navy: #17324a;
+    --green: #4d6946;
+    --offwhite: #f6f4ef;
+    --sand: #d8c7a8;
+    --dark: #182126;
+    --footer: #101f2c;
+    --lightgreen: #b9d2af;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/*************** Header *********************/
+
+header {
+    background-color: var(--offwhite);
+}
+
+header a {
+    color: var(--navy);
+    text-decoration: none;
+}
+
+header .logo span {
+    font-family: "DM Serif Display", serif;
+    font-size: 28px;
+    color: var(--navy);
+}
+
+/*************** Navigation *********************/
+
+header nav {
+    background-color: var(--offwhite);
+}
+
+header nav a {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*************** Header Button *********************/
+
+header .header_button {
+    background-color: var(--navy);
+    color: var(--offwhite);
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+header .header_button:hover {
+    background-color: var(--green);
+}
+
+/*************** Burgermenu *********************/
+
+.menu_toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu_toggle span {
+    background-color: var(--navy);
+}
+
+/*************** Hero *********************/
+
+.hero {
+    background-image:
+    linear-gradient(
+        rgba(23, 50, 74, 0.55),
+        rgba(23, 50, 74, 0.55)
+    ),
+    url("../img/HeroPicture.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: var(--offwhite)
+}
+
+.hero h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.hero_intro {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.hero_description {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 430px;
+}
+
+.hero_button_primary {
+    display: inline-block;
+    background-color: var(--navy);
+    color: var(--offwhite);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 24px;
+    border: 2px solid var(--offwhite);
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.hero_button_primary:hover {
+    background-color: var(--green);
+}
+
+.hero_button_secondary {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--offwhite);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 24px;
+    border: 2px solid var(--offwhite);
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.hero_button_secondary:hover {
+    background-color: rgb(246 244 239 / 20%);
+}
+
+.hero_buttons a {
+    text-align: center;
+}
+
+/* Intro Section */
+.intro_section {
+    background-color: var(--sand);
+    color: var(--dark);
+}
+
+.intro_heading h2 {
+    font-family: "DM Serif Display", serif;
+    color: var(--navy);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.1;
+    max-width: 400px;
+}
+
+.intro_heading p {
+    color: var(--green);
+    font-weight: 600;
+}
+
+.intro_text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Guides */
+.guides {
+    background-color: var(--offwhite);
+}
+
+.guides_heading p {
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.guides_heading h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--navy);
+}
+
+.guide_card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.guide_card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.guide_card h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.guide_card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--dark);
+}
+
+.guide_card a {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.guide_card a:hover {
+    color: var(--green);
+}
+
+/* CTA Section */
+.cta_section {
+    background-color: var(--navy);
+    color: var(--offwhite);
+}
+
+.cta_intro {
+    color: var(--lightgreen);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.cta_section h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.cta_description {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 400px;
+}
+
+.cta_button {
+    display: inline-block;
+    background-color: var(--offwhite);
+    color: var(--navy);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 30px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.cta_button:hover {
+    background-color: var(--lightgreen);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer);
+    color: var(--offwhite);
+}
+
+.footer_brand h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.footer_brand p,
+.footer_bottom p {
+    font-size: 14px;
+}
+
+.footer_nav a {
+    color: var(--offwhite);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer_bottom {
+    border-top: 1px solid rgb(246 244 239 / 15%);
+}
+
+/* Page Hero */
+.page_hero {
+    background-color: var(--navy);
+    color: var(--offwhite);
+}
+
+.page_hero_label {
+    color: var(--lightgreen);
+    font-size: 12px;
+}
+
+.page_hero h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.page_hero_text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Steps Section */
+.steps_section {
+    background-color: var(--offwhite);
+}
+
+.step_number {
+    color: var(--green);
+    font-size: 14px;
+}
+
+.step_text h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--navy);
+}
+
+.step img {
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Equipment Section */
+.equipment_section {
+    background-color: var(--offwhite);
+}
+
+.equipment_label {
+    color: var(--green);
+    font-size: 14px;
+}
+
+.equipment_content h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--navy);
+}
+
+.equipment_content h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--navy);
+}
+
+.equipment_content p:not(.equipment_label) {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--dark);
+}
+
+.equipment_extra {
+    background-color: var(--sand);
+}
+
+
+
+
+
+
+
+
+/*************** Desktop *********************/
+
+@media (min-width: 1000px) {
+
+    /* Navigation hover*/
+    header nav a {
+        transition: color 0.2s ease;
+    }
+
+    header nav a:hover {
+        color: var(--green);
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 64px;
+    }
+
+    /* Intro Section */
+    .intro_heading h2 {
+    font-size: 48px;
+    }
+
+    /* Guides */
+    .guides_heading h2 {
+    font-size: 40px;
+    }
+
+    .guide_card img {
+    height: 160px;
+    }
+
+    /* CTA Section */
+    .cta_section h2 {
+        font-size: 48px;
+    }
+
+
+
+    
+
+
+
+
+
+
+}
